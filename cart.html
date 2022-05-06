@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cart page</title>
+
     <link rel="stylesheet" href="./styles/cart.css">
 </head>
 <body>
@@ -17,20 +18,20 @@
         <div>Amazing Offer on Checkout</div>
         <div>popup</div>
         <div id="r_checkbox">
-            <div >
+            <div id="heading" >
                 <div id="r_data">
                     <div>
-                        <div></div>
-                        <div>Product</div>
-                        <div>Price</div>
-                        <div>Quantity</div>
-                        <div>Subtotal</div>
+                        <div id="r_col1"></div>
+                        <div id="r_col2" style="font-weight: bold;">Product</div>
+                        <div id="r_col3" style="font-weight: bold;">Price</div>
+                        <div class="r_inQuntity" style="font-weight: bold;border: white;">Quantity</div>
+                        <div id="r_col5" style="font-weight: bold;">Subtotal</div>
 
                     </div>
-                    <hr>
+                    <hr style="border: 1px solid gray;">
                     <!-- append the data here -->
                     <!-- collect data from local storage -->
-                    <div>
+                    <!-- <div>
                         <div id="r_col1">
                             <div id="r_cancel"><img src="" alt=""></div>
                             <div id="r_img"><img src="" alt=""></div>
@@ -45,21 +46,25 @@
                         <p id="r_col5">Sutotal</p>
 
                     </div>
-                    <hr>
+                    <hr> -->
                     <!-- close -->
                 </div>
-                <div>update</div>
+                <div id="update">
+                    <button onclick="update">update</button>
+                </div>
 
             </div>
-            <div>
-                <h2>cart Total</h2>
+            <div id="r_proceed">
+                <h1>Cart Total</h1>
                 <div>
-                    <div>subtotal</div>
+                    <p>subtotal</p>
                     <!-- update total price here send to local storage -->
-                    <div>999</div>
+                    <p id="pp"></p>
                 </div>
                 <hr>
-                <div>proceed to Checkout</div>
+                <div onclick="proceedFun"><h4>proceed to Checkout</h4>
+                    <img src="./components/arrow-right-long-solid.svg" alt="" srcset="">
+                </div>
             </div>
         </div>
     </div>
